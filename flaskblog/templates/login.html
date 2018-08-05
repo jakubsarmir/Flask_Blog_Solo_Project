@@ -44,7 +44,7 @@
                 </div>
                 <div>
                     <small class="text-muted">
-                        <a class="ml-2" href="#">Forgot password?</a>
+                        <a class="ml-2" href="{{ url_for('users.reset_request') }}">Forgot password?</a>
                     </small>
                 </div>
             </fieldset>
@@ -53,7 +53,7 @@
     </div>
     <div class="border-top pt-3">
         <small class="text-muted">
-            Need an account? <a class="ml-2" href="{{ url_for('register') }}">Sign UP !</a>
+            Need an account? <a class="ml-2" href="{{ url_for('users.register') }}">Sign UP !</a>
         </small>
     </div>
 {% endblock content %}
